@@ -7,8 +7,8 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-  / {
-      keymap {
+/ {
+    keymap {
         compatible = "zmk,keymap";
 
         default_layer {
@@ -19,9 +19,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Z    &kp U  &kp I     &kp O  &kp P  &kp ESCAPE
-&kp LEFT_SHIFT    &kp A  &kp S  &kp D     &kp F  &kp G        &kp H    &kp J  &kp K     &kp L  &kp S  &kp BACKSPACE
-&kp LEFT_CONTROL  &kp Y  &kp X  &kp C     &kp V  &kp B        &kp N    &kp M  &kp U     &kp O  &kp A  &kp DELETE
+&kp TAB           &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Z    &kp U  &kp I      &kp O      &kp P      &kp ESCAPE
+&kp LEFT_SHIFT    &kp A  &kp S  &kp D     &kp F  &kp G        &kp H    &kp J  &kp K      &kp L      &kp RA(S)  &kp BACKSPACE
+&kp LEFT_CONTROL  &kp Y  &kp X  &kp C     &kp V  &kp B        &kp N    &kp M  &kp RA(Y)  &kp RA(P)  &kp RA(Q)  &kp DELETE
                                 &kp LGUI  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp RALT
             >;
         };
@@ -50,8 +50,8 @@
 
             bindings = <
 &kp TAB    &kp PERCENT        &kp DOLLAR        &kp HASH       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp LESS_THAN  &kp GREATER_THAN  &kp PIPE         &kp EQUAL     &kp UNDERSCORE  &kp ESC
-&kp LSHFT  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp AMPERSAND  &kp LEFT_BRACKET      &kp RIGHT_BRACKET        &kp COMMA      &kp DOT           &kp EXCLAMATION  &kp QUESTION  &kp MINUS       &kp BSPC
-&kp LCTRL  &kp TILDE          &kp GRAVE         &kp CARET      &kp LEFT_BRACE        &kp RIGHT_BRACE          &kp SEMICOLON  &kp COLON         &kp SLASH        &kp ASTERISK  &kp PLUS        &kp DEL
+&kp LSHFT  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp AMPERSAND  &kp LEFT_BRACKET      &kp RIGHT_BRACKET        &kp SEMICOLON  &kp COLON         &kp EXCLAMATION  &kp QUESTION  &kp MINUS       &kp BSPC
+&kp LCTRL  &kp TILDE          &kp GRAVE         &kp CARET      &kp LEFT_BRACE        &kp RIGHT_BRACE          &kp COMMA      &kp DOT           &kp SLASH        &kp ASTERISK  &kp PLUS        &kp DEL
                                                 &kp LGUI       &trans                &kp SPACE                &kp RET        &trans            &kp RALT
             >;
         };
