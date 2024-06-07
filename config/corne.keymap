@@ -7,10 +7,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-#include "../zmk-helpers/helper.h"
-#include "../zmk-helpers/keypos_def/keypos_36keys.h"
-#include "../zmk-helpers/international_chars/german.dtsi"
-
   / {
       keymap {
         compatible = "zmk,keymap";
@@ -24,8 +20,8 @@
 
             bindings = <
 &kp TAB           &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Z    &kp U  &kp I     &kp O  &kp P  &kp ESCAPE
-&kp LEFT_SHIFT    &kp A  &kp S  &kp D     &kp F  &kp G        &kp H    &kp J  &kp K     &kp L  &kp &de_eszett  &kp BACKSPACE
-&kp LEFT_CONTROL  &kp Y  &kp X  &kp C     &kp V  &kp B        &kp N    &kp M  &kp &de_ue     &kp &de_oe  &kp &de_ae  &kp DELETE
+&kp LEFT_SHIFT    &kp A  &kp S  &kp D     &kp F  &kp G        &kp H    &kp J  &kp K     &kp L  &kp S  &kp BACKSPACE
+&kp LEFT_CONTROL  &kp Y  &kp X  &kp C     &kp V  &kp B        &kp N    &kp M  &kp U     &kp O  &kp A  &kp DELETE
                                 &kp LGUI  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp RALT
             >;
         };
