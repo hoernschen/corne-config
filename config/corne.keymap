@@ -9,24 +9,7 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        ClearBT {
-            bindings = <&bt BT_CLR_ALL>;
-            key-positions = <11 24 37>;
-        };
-
-        nextBT {
-            bindings = <&bt BT_NXT>;
-            key-positions = <37 24 19>;
-        };
-
-        prevBT {
-            bindings = <&bt BT_PRV>;
-            key-positions = <37 24 20>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -54,10 +37,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp N1  &kp N2  &kp N3    &kp N4  &kp N5       &kp N6    &kp N7    &kp N8    &kp N9     &kp N0     &kp ESC
-&kp LSHFT  &kp F1  &kp F2  &kp F3    &kp F4  &kp F5       &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &kp MINUS  &kp BSPC
-&kp LCTRL  &kp F6  &kp F7  &kp F8    &kp F9  &kp F10      &kp F11   &kp F12   &kp FSLH  &kp STAR   &kp PLUS   &kp C_AC_PRINT
-                           &kp LGUI  &trans  &kp SPACE    &kp RET   &trans    &kp RALT
+&kp TAB          &kp N1  &kp N2  &kp N3    &kp N4  &kp N5       &kp N6    &kp N7    &kp N8    &kp N9     &kp N0     &bt BT_CLR
+&kp LSHFT        &kp F1  &kp F2  &kp F3    &kp F4  &kp F5       &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &kp MINUS  &bt BT_PRV
+&kp PRINTSCREEN  &kp F6  &kp F7  &kp F8    &kp F9  &kp F10      &kp F11   &kp F12   &kp FSLH  &kp STAR   &kp PLUS   &bt BT_NXT
+                                 &kp LGUI  &trans  &kp SPACE    &kp RET   &trans    &kp RALT
             >;
         };
 
