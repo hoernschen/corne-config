@@ -14,7 +14,17 @@
 
         ClearBT {
             bindings = <&bt BT_CLR_ALL>;
-            key-positions = <40 37 11>;
+            key-positions = <11 24 37>;
+        };
+
+        nextBT {
+            bindings = <&bt BT_NXT>;
+            key-positions = <37 24 19>;
+        };
+
+        prevBT {
+            bindings = <&bt BT_PRV>;
+            key-positions = <37 24 20>;
         };
     };
 
