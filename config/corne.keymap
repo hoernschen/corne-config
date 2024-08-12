@@ -37,10 +37,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp PAGE_UP      &kp N1  &kp N2  &kp N3    &kp N4  &kp N5       &kp N6    &kp N7    &kp N8        &kp N9     &kp N0     &bt BT_CLR
-&kp PAGE_DOWN    &kp F1  &kp F2  &kp F3    &kp F4  &kp F5       &kp LEFT  &kp DOWN  &kp UP        &kp RIGHT  &kp MINUS  &bt BT_PRV
-&kp PRINTSCREEN  &kp F6  &kp F7  &kp F8    &kp F9  &kp F10      &kp F11   &kp F12   &kp FSLH      &kp STAR   &kp PLUS   &bt BT_NXT
-                                 &kp LGUI  &trans  &kp SPACE    &kp RET   &trans    &kp LEFT_ALT
+&kp PAGE_UP      &kp N1  &kp N2  &kp N3    &kp N4  &kp N5       &kp N6    &kp N7    &kp N8        &kp N9     &kp N0     &kp ESC
+&kp PAGE_DOWN    &kp F1  &kp F2  &kp F3    &kp F4  &kp F5       &kp LEFT  &kp DOWN  &kp UP        &kp RIGHT  &kp MINUS  &kp BACKSPACE
+&kp PRINTSCREEN  &kp F6  &kp F7  &kp F8    &kp F9  &kp F10      &kp F11   &kp F12   &kp FSLH      &kp STAR   &kp PLUS   &kp DEL
+                                 &kp LGUI  &trans  &kp SPACE    &kp RET   &mo 3     &kp LEFT_ALT
             >;
         };
 
@@ -55,7 +55,16 @@
 &kp AT            &kp PERCENT        &kp DOLLAR        &kp HASH       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp LESS_THAN  &kp GREATER_THAN  &kp PIPE         &kp EQUAL     &kp UNDERSCORE  &kp BACKSLASH
 &kp RA(NUMBER_5)  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp AMPERSAND  &kp LEFT_BRACKET      &kp RIGHT_BRACKET        &kp SEMICOLON  &kp COLON         &kp EXCLAMATION  &kp QUESTION  &kp MINUS       &kp RA(LS(NUMBER_1))
 &kp LCTRL         &kp TILDE          &kp GRAVE         &kp CARET      &kp LEFT_BRACE        &kp RIGHT_BRACE          &kp COMMA      &kp DOT           &kp SLASH        &kp ASTERISK  &kp PLUS        &kp RA(SLASH)
-                                                       &kp LGUI       &trans                &kp SPACE                &kp RET        &trans            &kp RALT
+                                                       &kp LGUI       &mo 3                 &kp SPACE                &kp RET        &trans            &kp RALT
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &bt BT_CLR_ALL
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &bt BT_PRV
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &bt BT_NXT
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
